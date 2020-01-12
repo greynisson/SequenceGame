@@ -1,0 +1,50 @@
+body {
+  background-color: darkblue;
+  text-align: center;
+}
+
+.title, .status {
+  color: white;
+  font-family: monospace;
+  margin-top: 25px;
+  font-size: 2rem;
+}
+
+.box {
+  height: 150px;
+  width: 150px;
+  border: solid black 10px;
+  margin: 0 auto;
+  border-radius: 25%;
+  line-height: 4;
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+
+.box-up {
+  background: yellow;
+}
+
+.box-left {
+  background-color: red;
+  position: relative;
+  right: 175px;
+  top: 5px;
+}
+
+.box-right {
+  background-color: green;
+  position: relative;
+  left: 175px;
+  bottom: 165px;
+}
+
+.box-down {
+  background-color: powderblue;
+  position: relative;
+  bottom: 150px;
+}
+
+.box-active {
+  opacity: 50%;
+}
