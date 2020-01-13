@@ -73,7 +73,7 @@ function nextLevel() {
 
 function gameOver() {
   $(".title").text("Game Over! You reached level " + level);
-  $(".status").text("Press any key to start again.");
+  $(".status").text("Press Restart to try again");
   humansTurn = false;
   isGameOver = true;
   if ((level - 1) > highScore) {
@@ -174,5 +174,6 @@ $(".box").click(function() {
 $(".btn").click(function() {
   if (isGameOver) {
     restart();
+    nextLevel();
   }
 })
