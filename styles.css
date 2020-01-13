@@ -18,8 +18,8 @@ body {
 }
 
 .box {
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   border: solid black 10px;
   margin: 0 auto;
   border-radius: 25%;
@@ -35,25 +35,25 @@ body {
 .box-left {
   background-color: red;
   position: relative;
-  right: 350px;
-  top: 80px;
+  right: 250px;
+  top: 30px;
 }
 
 .box-right {
   background-color: green;
   position: relative;
-  left: 350px;
+  left: 250px;
   bottom: 190px;
 }
 
 .box-down {
   background-color: powderblue;
   position: relative;
-  bottom: 110px;
+  bottom: 160px;
 }
 
 .box-active {
-  opacity: 25%;
+  visibility: hidden;
 }
 
 .btn {
