@@ -3,7 +3,14 @@ body {
   text-align: center;
 }
 
-.title, .status {
+.title {
+  color: white;
+  font-family: monospace;
+  margin-top: 200px;
+  font-size: 3rem;
+}
+
+.status {
   color: white;
   font-family: monospace;
   margin-top: 25px;
@@ -47,4 +54,38 @@ body {
 
 .box-active {
   opacity: 50%;
+}
+
+.btn {
+  height: 100px;
+  width: 350px;
+  background-color: gold;
+  color: black;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
+
+.high-score {
+  width: 250px;
+  margin: 50px auto 100px;
+  background-color: white;
+  color: darkblue;
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+  left: 600px;
+  bottom: 1175px;
+}
+
+.score-text {
+  padding: 20px 0 10px;
+}
+
+.score {
+  padding: 10px 0 20px;
+}
+
+.btn-hide {
+  display: none;
 }
