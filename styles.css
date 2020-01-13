@@ -53,7 +53,7 @@ body {
 }
 
 .box-active {
-  opacity: 50%;
+  opacity: 25%;
 }
 
 .btn {
@@ -74,8 +74,9 @@ body {
   font-size: 2rem;
   font-weight: bold;
   position: relative;
-  left: 600px;
-  bottom: 1175px;
+  /* left: 600px;
+  bottom: 1025px; */
+  top: 100px;
 }
 
 .score-text {
@@ -84,6 +85,11 @@ body {
 
 .score {
   padding: 10px 0 20px;
+}
+
+.btn {
+  position: relative;
+  bottom: 300px;
 }
 
 .btn-hide {
