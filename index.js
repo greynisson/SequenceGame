@@ -69,14 +69,19 @@ function nextLevel() {
   $(".status").text("Pay attention...");
   sequence.push(randomBox());
   runComputer(sequence, delay);
-  humansTurn = true;
 }
 
 function gameOver() {
-  $(".title").text("Game over :( You reached level " + level);
+  $(".title").text("Game Over! You reached level " + level);
   $(".status").text("Press any key to start again.");
   humansTurn = false;
   isGameOver = true;
+  if ((level - 1) > highScore) {
+    highScore = level - 1;
+  }
+  $(".score").text(highScore);
+  $(".btn").removeClass("btn-hide");
+  $(".btn").html("Restart");
 }
 
 function restart() {
@@ -84,6 +89,7 @@ function restart() {
   sequence = [];
   isGameOver = false;
   computersTurn = true;
+  $(".btn").addClass("btn-hide");
 }
 
 function runHuman(id) {
@@ -139,6 +145,7 @@ let level = 0;
 let computersTurn = true;
 let humansTurn = false;
 let isGameOver = false;
+var highScore = 0;
 
 
 
@@ -159,7 +166,13 @@ $(document).on("click", function() {
   };
 });
 
-
+$(".btn").click(function() {
+  $(this).addClass("btn-hide");
+  if (computersTurn) {
+    computersTurn = false;
+    nextLevel();
+  }
+});
 
 $(document).on("keydown", function(event) {
   if (humansTurn) {
@@ -174,7 +187,7 @@ $(".box").click(function() {
   }
 });
 
-$(document).on("keydown", function() {
+$(".btn").click(function() {
   if (isGameOver) {
     restart();
   }
