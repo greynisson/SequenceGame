@@ -147,24 +147,8 @@ let humansTurn = false;
 let isGameOver = false;
 var highScore = 0;
 
-
-
 // Keyri random röð með time-delay:
 // run(sequence,delay);
-
-$(document).on("keydown", function() {
-  if (computersTurn) {
-    computersTurn = false;
-    nextLevel();
-  };
-});
-
-$(document).on("click", function() {
-  if (computersTurn) {
-    computersTurn = false;
-    nextLevel();
-  };
-});
 
 $(".btn").click(function() {
   $(this).addClass("btn-hide");
